@@ -156,63 +156,63 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #ffffff;
-		}
-
-	strong, b {
-		color: #ffffff;
+	a:hover {
+		border-bottom-color: transparent;
+		color: #007bff; /* Deep blue */
+	  }
+	  
+	  strong, b {
+		color: #212529; /* Dark gray */
 		font-weight: bold;
-	}
-
-	em, i {
+	  }
+	  
+	  em, i {
 		font-style: italic;
-	}
-
-	p {
+	  }
+	  
+	  p {
 		margin: 0 0 2em 0;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		color: #212529; /* Dark gray */
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
-	}
-
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
-		}
-
-	h1 {
+	  }
+	  
+	  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: inherit;
+		text-decoration: none;
+	  }
+	  
+	  h1 {
 		font-size: 2.75em;
-	}
-
-		h1.major {
-			margin: 0 0 1.3em 0;
-			position: relative;
-			padding-bottom: 0.35em;
-		}
-
-			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
-				border-radius: 0.2em;
-				bottom: 0;
-				content: '';
-				height: 0.05em;
-				position: absolute;
-				right: 0;
-				width: 100%;
-			}
+	  }
+	  
+	  h1.major {
+		margin: 0 0 1.3em 0;
+		position: relative;
+		padding-bottom: 0.35em;
+	  }
+	  
+	  h1.major:after {
+		background-image: -moz-linear-gradient(to right, #007bff, #00c0ef); /* Blue gradient */
+		background-image: -webkit-linear-gradient(to right, #007bff, #00c0ef);
+		background-image: -ms-linear-gradient(to right, #007bff, #00c0ef);
+		background-image: linear-gradient(to right, #007bff, #00c0ef);
+		-moz-transition: max-width 0.2s ease;
+		-webkit-transition: max-width 0.2s ease;
+		-ms-transition: max-width 0.2s ease;
+		transition: max-width 0.2s ease;
+		border-radius: 0.2em;
+		bottom: 0;
+		content: '';
+		height: 0.05em;
+		position: absolute;
+		right: 0;
+		width: 100%;
+	  }
 
 	h2 {
 		font-size: 1.75em;
