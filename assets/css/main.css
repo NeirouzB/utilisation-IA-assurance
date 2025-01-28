@@ -2446,7 +2446,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #3333AF;
 			content: '\f00c';
 		}
 
@@ -2538,27 +2538,27 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: #4262a6;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: #333b82;
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
+					color: #5063b5;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
+					color: #3e5994;
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #3333AF;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #953d75;
+					color: #000083;
 				}
 
 /* Image */   
@@ -3258,11 +3258,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #3333AF;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #000083;
 		}
 
 		.wrapper.fullscreen {
@@ -3767,10 +3767,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #3333AF);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #3333AF);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #3333AF);
+				background-image: linear-gradient(to right, #5e42a6, #3333AF);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3859,7 +3859,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #3333AF;
 						}
 
 		}
