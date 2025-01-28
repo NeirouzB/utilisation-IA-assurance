@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #2a6dc4;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -158,7 +158,7 @@ input, select, textarea {
 
 	a:hover {
 		border-bottom-color: transparent;
-		color: #007bff; /* Deep blue */
+		color: #226bca; /* Deep blue */
 	  }
 	  
 	  strong, b {
@@ -1917,7 +1917,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #ffffff;
-			color: #312450 !important;
+			color: #242e50 !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2358,7 +2358,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #312450;
+			background: #242b50;
 		}
 
 		select:focus::-ms-value {
@@ -2446,7 +2446,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #3333AF;
+			color: #335eaf;
 			content: '\f00c';
 		}
 
@@ -2527,7 +2527,7 @@ input, select, textarea {
 			display: block;
 			background: #ffffff;
 			border-radius: 100%;
-			color: #312450;
+			color: #253064;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2542,11 +2542,11 @@ input, select, textarea {
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #333b82;
+					color: #213797;
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5063b5;
+					color: #507fb5;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
@@ -2554,11 +2554,11 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #3333AF;
+					color: #335aaf;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #000083;
+					color: hsl(240, 100%, 26%);
 				}
 
 /* Image */   
@@ -3238,31 +3238,31 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #06155c;
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #3869d3;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #334c82;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #305eb3;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #185ba8;
 		}
 
 		.wrapper.style3 {
-			background-color: #3333AF;
+			background-color: #214fb1;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #000083;
+			background-color: #002a83;
 		}
 
 		.wrapper.fullscreen {
@@ -3372,7 +3372,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #0e4579;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3526,7 +3526,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #002468;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3859,7 +3859,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #3333AF;
+							background-color: #3346af;
 						}
 
 		}
