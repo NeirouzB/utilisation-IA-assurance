@@ -38,7 +38,7 @@
 							<div style="height: 50px;"></div>
 							<p>L'IA transforme profondément le secteur de l'assurance en 2025, avec des applications innovantes dans plusieurs domaines clés:</p>
 
-							<h2>Personnalisation à grande échelle</h2>
+							<h2>Personnalisation à grande échelle : Focus sur la reconstruction 3D</h2>
 							<p>Les assureurs utilisent des modèles prédictifs avancés pour adapter leurs offres au profil de risque individuel de chaque client:</p>
 							<ul style="display: inline-block; text-align: left;">
 								<li><strong>Allianz</strong> exploite l'apprentissage automatique pour analyser l'historique des sinistres, les données de santé et le comportement des clients afin de personnaliser les offres d'assurance. <sup><a href="https://www.boitealivres.com/bonus/extrait/9782354745554">[Livre: Les fondamentaux de l’IA
@@ -46,7 +46,7 @@
 								<li><strong>AXA</strong> a mis en place un système de tarification dynamique qui ajuste les primes en temps réel en fonction de l'évolution des données du marché, offrant ainsi des tarifs plus compétitifs et adaptés. <sup><a href="https://www.institutdesactuaires.com/docs/mem/1d003557cff239c58be6e129cf6f84c9.pdf">[Développement d’une tarification spécifique 
 									dommages AXA]</a></sup></li>
 							</ul>
-							<h3>Focus sur la reconstruction 3D</h3>
+							<h3>La reconstruction 3D</h3>
 							<p>La reconstruction 3D révolutionne l'évaluation des sinistres en offrant une visualisation précise et détaillée des dommages :</p>
 							<ul style="display: inline-block; text-align: left;">
 								<li><strong>Exemple: Matterport</strong> utilise des caméras 3D et des algorithmes avancés pour créer des modèles numériques détaillés des espaces endommagés. Les caméras capturent des images et des données de profondeur à l'aide de capteurs LiDAR et de photographie HDR. Les algorithmes de vision par ordinateur et de photogrammétrie traitent ces données pour générer des modèles 3D précis. Ces modèles permettent aux experts d'évaluer les sinistres à distance avec une précision inégalée, en offrant des vues interactives et des mesures exactes des dimensions des espaces.</li>								<li>La technologie de reconstruction 3D repose sur la photogrammétrie et le LiDAR, capturant des millions de points de données pour générer des représentations fidèles des environnements physiques.</li>
@@ -56,7 +56,7 @@
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/9_GD7kUbogk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div></div>
 
-							<h2>Automatisation intelligente</h2>
+							<h2>Automatisation intelligente : Focus sur les outils d'automatisation de flux et de traitement des données</h2>
 							<p>Les outils d'automatisation de flux et de traitement des données permettent aux assureurs de gérer efficacement de grandes quantités de données :</p>
 							<ul style="display: inline-block; text-align: left;">
 								<li><strong>Databricks</strong> :
@@ -91,14 +91,32 @@
 								<li><strong>State Farm</strong> aux États-Unis utilise l'IA couplée à des capteurs IoT dans les maisons pour prévenir les dégâts des eaux. Le système peut détecter les fuites précocement et alerter les propriétaires</li>
 							</ul>
 
-							<h2>Amélioration du service client</h2>
+							<h2>Amélioration du service client : Focus sur les chatbots</h2>
 							<p>Les chatbots et assistants virtuels révolutionnent le service client :</p>
-							<ul style="display: inline-block; text-align: left;">
-								<li><strong>MAIF</strong> a déployé un assistant virtuel nommé "Max" qui utilise le NLP pour répondre aux questions des clients 24/7, gérant une grande variété de demandes, de la souscription à la déclaration de sinistre</li>
-								<li><strong>Webotit</strong> propose des chatbots intelligents qui s'intègrent aux systèmes d'information des assureurs pour automatiser le traitement des demandes simples, réduisant ainsi les coûts de gestion de 30% par assuré</li>
-								<li><strong>IBM watsonx Assistant</strong> est une plateforme d'IA conversationnelle utilisée pour créer des assistants virtuels et vocaux dans le secteur de l'assurance.</li>
-							</ul>
+							<p>Une technologie récente est les RAG (Retrieval-Augmented Generation) qui permettent d'être nourris par des documentations et de répondre aux clients de manière plus précise et contextuelle.</p>
+							
+							<div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+								<h3>Architecture des RAG</h3>
+								<p>Les RAG combinent des modèles de génération de langage (comme les LLM - Large Language Models) avec des systèmes de récupération d'informations. Voici comment cela fonctionne :</p>
+								<ul style="display: inline-block; text-align: left;">
+									<li>Un module de récupération d'informations recherche dans une base de données ou une documentation pour trouver les informations pertinentes.</li>
+									<li>Les informations récupérées sont ensuite utilisées pour alimenter le modèle de génération de langage.</li>
+									<li>Le modèle de génération produit une réponse contextuelle et précise en utilisant les informations récupérées.</li>
+								</ul>
+							</div>
 
+							<div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+								<h3>Bénéfices des RAG par rapport aux LLM</h3>
+								<ul style="display: inline-block; text-align: left;">
+									<li><strong>Précision accrue :</strong> Les RAG peuvent fournir des réponses plus précises en utilisant des informations spécifiques et à jour provenant de la documentation.</li>
+									<li><strong>Réduction des hallucinations :</strong> En s'appuyant sur des données récupérées, les RAG réduisent les risques de générer des informations incorrectes ou inventées.</li>
+									<li><strong>Adaptabilité :</strong> Les RAG peuvent être facilement mis à jour avec de nouvelles informations, ce qui les rend plus adaptables aux changements et aux nouvelles connaissances.</li>
+									<li><strong>Contexte enrichi :</strong> En combinant récupération et génération, les RAG peuvent fournir des réponses plus contextuelles et pertinentes pour les utilisateurs.</li>
+								</ul>
+								<img src="images/RAG.jpg" alt="RAG Architecture" style="width:100%;height:auto;">
+								<p>Source: <a href="https://aws.amazon.com/fr/what-is/retrieval-augmented-generation/">https://aws.amazon.com/fr/what-is/retrieval-augmented-generation/</a></p>
+							</div>
+							
 							<p class="note">Ces technologies d'IA transforment radicalement le secteur de l'assurance, offrant des services plus personnalisés, efficaces et centrés sur le client. Leur adoption continue de s'accélérer, devenant un facteur clé de compétitivité dans un marché en pleine évolution.</p>
 						</div>
 					
