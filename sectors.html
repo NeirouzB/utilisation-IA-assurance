@@ -116,25 +116,45 @@
 							</ul>
 
 							<h2 id="section3">3. Approche préventive</h2>
-							<h3>Détection de fraude</h3>
-							<p>La détection de fraude est un domaine clé où l'IA apporte une valeur ajoutée significative :</p>
-							<ul style="text-align: left;">
-								<li><strong>Analyse prédictive :</strong> Les algorithmes d'apprentissage automatique analysent les données historiques pour identifier des modèles de fraude potentiels.</li>
-								<li><strong>Surveillance en temps réel :</strong> Les systèmes d'IA surveillent les transactions en temps réel pour détecter des comportements suspects et déclencher des alertes instantanément.</li>
-								<li><strong>Reconnaissance d'anomalies :</strong> Les techniques de détection d'anomalies permettent d'identifier des activités inhabituelles qui pourraient indiquer une fraude.</li>
-								<li><strong>Automatisation des enquêtes :</strong> Les outils d'IA automatisent les processus d'enquête en collectant et en analysant les preuves, ce qui accélère la résolution des cas de fraude.</li>
-							</ul>
-							<h3>Nouvelle technologie de détection de fraude</h3>
+							<h3>Focus sur quelques technologies de détection de fraude</h3>
+							<strong>I. Architecture de réseau d'assurance basée sur la blockchain et l'IA</strong>
 							<p>La nouvelle méthode de détection de fraude proposée dans cette veille repose sur une architecture de réseau d'assurance basée sur la blockchain et l'IA. En utilisant des contrats intelligents, les règles de traitement des réclamations sont codées pour automatiser le processus de remboursement, réduisant ainsi les coûts et les erreurs humaines. La blockchain permissionnée permet aux compagnies d'assurance de stocker et partager des informations de manière sécurisée, avec un contrôle d'accès strict. Le consensus est atteint rapidement grâce à l'algorithme PBFT, permettant un traitement efficace des transactions. Les données collectées sont partagées entre les pairs du réseau, facilitant l'utilisation d'algorithmes d'apprentissage automatique pour la détection de fraude en temps réel. Les transactions sont validées par des signatures numériques, assurant l'intégrité et la sécurité des informations. Cette approche offre une meilleure confidentialité et sécurité par rapport aux blockchains publiques, en limitant l'accès aux participants approuvés.</p>
 							<div style="text-align: center; margin-top: 20px;">
 								<img src="assets\images\blochchain.png" alt="Architecture of SISBAR" style="width:60%;height:auto;">
 								<p>Architecture de SISBAR. La ligne continue se réfère à la stratégie d'apprentissage hors ligne. Les lignes pointillées indiquent la stratégie d'apprentissage en ligne où les données sont continuellement alimentées au modèle d'apprentissage automatique. Dans cette figure, la couleur rouge indique les données alimentées pour les modules d'apprentissage automatique hors ligne et en ligne, et la couleur verte indique les données, étiquetées manuellement, qui sont alimentées au modèle d'apprentissage en ligne afin de mettre à jour ses poids et d'améliorer sa précision.</p>
 								<p>Source: <a href="https://ieeexplore.ieee.org/abstract/document/9046765">A Secure AI-Driven Architecture for Automated Insurance Systems: Fraud Detection and Risk Measurement</a></p>
 							</div>
+							<h3>II. Détection de fraude basée sur le Machine Learning</h3>
+							<p>La détection de fraude et la modélisation des risques basées sur le Machine Learning suivent une méthodologie rigoureuse pour garantir la précision et la confidentialité des données :</p>
+							<ul style="text-align: left;">
+								<li><strong>Nettoyage des données :</strong> Détection et correction des données inexactes, remplissage des valeurs manquantes.</li>
+								<li><strong>Exploration des données :</strong> Résumé des informations principales par des méthodes statistiques et de visualisation.</li>
+								<li><strong>Préservation de la confidentialité :</strong> Anonymisation des données par catégorisation et généralisation.</li>
+								<li><strong>Construction du modèle :</strong> Classification multi-classes pour la détection de fraude, régression pour la prédiction des montants des réclamations.</li>
+							</ul>
+							<div style="text-align: center; margin-top: 20px;">
+								<img src="assets/images/pipeline.png" alt="Exemple de pipeline de données" style="width:60%;height:auto;">
+								<p>Exemple de pipeline de données</p>
+								<p>Source: <a href="https://ieeexplore.ieee.org/abstract/document/9046765">A Secure AI-Driven Architecture for Automated Insurance Systems: Fraud Detection and Risk Measurement</a></p>
+
+							</div>
+							<h3>Méthode 1 - Apprentissage hors ligne : Algorithme XGBoost</h3>
+							<p>L'algorithme XGBoost, une implémentation efficace des arbres de décision boostés par gradient, est utilisé pour l'apprentissage hors ligne. Il optimise l'utilisation de la mémoire et exploite la puissance de calcul du matériel, réduisant ainsi le temps d'exécution tout en augmentant les performances.</p>
+							<p>Le boosting construit séquentiellement des sous-arbres à partir d'un arbre original, chaque sous-arbre réduisant les erreurs du précédent. La fonction de coût de XGBoost est minimisée pour apprendre les fonctions du modèle d'arbre de régression.</p>
+							<h3>Méthode 2 - Apprentissage en ligne : Algorithme de l'arbre de décision très rapide (VFDT)</h3>
+							<p>Contrairement à l'approche d'apprentissage automatique par lots, les algorithmes d'apprentissage incrémental permettent non seulement de former dynamiquement les données, mais aussi de mettre à jour le modèle sans avoir besoin de le réentraîner avec l'ensemble du jeu de données. L'algorithme met à jour ses paramètres après chaque instance d'entraînement. De plus, l'apprentissage en ligne est une technique courante utilisée dans les domaines de l'apprentissage automatique car il est souvent infaisable de s'entraîner sur l'ensemble du jeu de données.</p>
+							<p>L'algorithme VFDT (Very Fast Decision Tree) ou arbre de décision de Hoeffding est un algorithme d'apprentissage automatique en ligne basé sur les arbres de décision, conçu autour des principes de la borne de Hoeffding (HB). La HB suppose que nous avons M variables aléatoires indépendantes r1, r2, ..., rM, avec une plage R et une moyenne r. La HB indique qu'avec une probabilité de 1 - δ, la vraie moyenne est au moins r où :</p>
+							<p style="text-align: center;">R²ln(1/δ) / 2M</p>
+							<p>L'algorithme de VFDT applique la HB pour évaluer si une feuille donnée doit être divisée pendant la phase d'entraînement en fonction du ratio de gain G() de tous les attributs. Supposons que G soit maximisé. Si X1 est l'attribut avec le ratio de gain le plus élevé G après avoir vu n exemples, X2 est l'attribut avec le deuxième ratio le plus élevé, et G = G(X1) - G(X2) est la différence des gains d'information. Si G > ε, alors la HB garantit que la vraie G > 0 avec une probabilité de 1 - δ et X1 est le meilleur attribut à diviser avec la même probabilité. Cette hypothèse est valide tant que la valeur de G pour un nœud donné peut être considérée comme une moyenne des valeurs de G pour les exemples de ce nœud. Par conséquent, les nœuds doivent accumuler des exemples jusqu'à ce que G > ε. À ce stade, les nœuds peuvent être divisés en utilisant le meilleur attribut actuel et les exemples suivants seront transmis aux nouvelles feuilles.</p>
+							<p>Les comptes sont les statistiques suffisantes nécessaires pour estimer la plupart des mesures heuristiques. De plus, l'élagage préventif est effectué en considérant à chaque nœud un attribut zéro X0 qui consiste à ne pas diviser le nœud. En conséquence, la division ne sera effectuée que si la meilleure division trouvée est meilleure que de rester dans le même état actuel.</p>
+							<p>En supposant que l est le nombre de feuilles dans HT, le temps d'exécution de l'algorithme basé sur les arbres est sous-linéaire par rapport à la taille du modèle O(log l), ce qui les rend extrêmement rapides et efficaces par rapport à d'autres algorithmes d'apprentissage automatique incrémental avec une relation linéaire entre la complexité du modèle et le temps d'exécution. Comme cet algorithme montre une haute performance dans différents sujets tels que les données massives et la résolution de problèmes dynamiques et en streaming, nous allons étudier ses performances contre la détection et la classification des réclamations frauduleuses.</p>
+
 							<h2 id="section4">4. Amélioration du service client : Focus sur les chatbots</h2>
 							<p>Les chatbots et assistants virtuels révolutionnent le service client :</p>
 							<p>Une technologie récente est les RAG (Retrieval-Augmented Generation) qui permettent d'être nourris par des documentations et de répondre aux clients de manière plus précise et contextuelle.</p>
 							
+
+
 							<div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
 								<h3>Architecture des RAG</h3>
 								<p>Les RAG combinent des modèles de génération de langage (comme les LLM - Large Language Models) avec des systèmes de récupération d'informations. Voici comment cela fonctionne :</p>
